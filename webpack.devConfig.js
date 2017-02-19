@@ -12,7 +12,7 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, 'public'),
-    filename: '[name].js'
+    filename: '[name].js',
   },
   externals: {
     jquery: 'jQuery'
@@ -29,17 +29,24 @@ module.exports = {
       },
       {
         test: /\.(sass|scss)$/,
-        loaders: ['style-loader', 'css-loader',
+        loaders: ['style-loader', 'css-loader', 'resolve-url-loader',
           {
-            loader: 'sass-loader',
-            query: {
-              includePaths: path.resolve(__dirname, 'node_modules/foundation-sites/scss')
+            loader: 'sass-loader?sourceMap',
+            options: {
+              includePaths: [
+                path.resolve(__dirname, 'node_modules/foundation-sites/scss')
+              ]
             }
           }]
+      },
+      {
+        test: /\.(jpg|png)$/,
+        loader: "file-loader?name=/images/[name].[ext]"
       }
     ]
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin()
-  ]
+  ],
+  devtool: 'source-map'
 }
