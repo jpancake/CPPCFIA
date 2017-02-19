@@ -7,7 +7,9 @@ module.exports = {
       'webpack-dev-server/client?http://localhost:3050/',
       'webpack/hot/dev-server',
       'script-loader!jquery/dist/jquery.min.js',
-      './src/styles/app.sass'
+      'slick-carousel/slick/slick.scss',
+      'slick-carousel/slick/slick-theme.scss',
+      './src/index.jsx'
     ]
   },
   output: {
@@ -34,14 +36,19 @@ module.exports = {
             loader: 'sass-loader?sourceMap',
             options: {
               includePaths: [
-                path.resolve(__dirname, 'node_modules/foundation-sites/scss')
+                path.resolve(__dirname, 'node_modules/foundation-sites/scss'),
+                path.resolve(__dirname, 'node_modules/slick-carousel/slick')
               ]
             }
           }]
       },
       {
-        test: /\.(jpg|png)$/,
+        test: /\.(jpg|png|gif)$/,
         loader: "file-loader?name=/images/[name].[ext]"
+      },
+      {
+        test: /\.(ttf|otf|eot|svg|woff)$/,
+        loader: 'file-loader?name=/fonts/[name].[ext]'
       }
     ]
   },
