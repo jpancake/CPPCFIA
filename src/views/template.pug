@@ -2,8 +2,71 @@ doctype html
 html(lang='en')
     head
         meta(charset='UTF-8')
-        title 
+        title
     body
-        #app
+        // Navigation
+        header
+            nav(role='nav-main')
+                .top-bar
+                    .top-bar-left.column.large-10
+                        ul.menu.vertical
+                            li.title
+                                h5 The Center for Information Assurance
+                            li.title Cal Poly Pomona
+                    .top-bar-right
+                        ul.menu
+                            li
+                                a(href="#") Home
+                            li.nav-dropdown
+                                a(href="#") About
+                                ul.no-bullet.nav-submenu
+                                    li
+                                        a(href="/about") The Center
+                                    li
+                                        a(href="#") Cybersecurity
+                                    li
+                                        a(href="#") Our Faculty
+                            li.nav-dropdown
+                                a(href="#") Academics
+                                ul.no-bullet.nav-submenu
+                                    li
+                                        a(href="#") Curriculum
+                                    li
+                                        a(href="#") Student Organizations
+                                    li
+                                        a(href="#") Scholarships
+                            li
+                                a(href="#") Projects
+                            li
+                                a(href="#") Research
+                            li
+                                a(href="#") Events
+                            li
+                                a(href="#") Contacts
+        // Footer
+        footer.row.expanded
+            div
+                h5.title Home
+            div
+                h5.title About
+                ul
+                    li The Center
+                    li Cybersecurity
+                    li Our Faculty
+            div
+                h5.title Academics
+                ul
+                    li Curriculum
+                    li Student Organizations
+                    li Scholarships
+            div
+                h5.title Projects
+            div
+                h5.title Research
+            div
+                h5.title Events
+            div
+                h5.title Contact
+        script(src="bundle.js")
 
 

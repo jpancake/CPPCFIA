@@ -15,6 +15,18 @@ const server = new WebpackDevServer(webpack(config), {
     app.get('/', (req, res) => {
       res.render('index')
     })
+    app.get('/about', (req, res) => {
+      res.render('about')
+    })
+    app.get('/about/faculty', (req, res) => {
+      res.render('faculty')
+    })
+    app.get('/academics', (req, res) => {
+      res.render('curriculum')
+    })
+    app.get('/student-organizations', (req, res) => {
+      res.render('student-organizations')
+    })
   },
   contentBase: './public',
   port: PORT,
