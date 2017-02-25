@@ -24,8 +24,35 @@ const server = new WebpackDevServer(webpack(config), {
     app.get('/academics', (req, res) => {
       res.render('curriculum')
     })
-    app.get('/student-organizations', (req, res) => {
+    app.get('/academics/student-organizations', (req, res) => {
       res.render('student-organizations')
+    })
+    app.get('/academics/student-organizations/missa', (req, res) => {
+      res.render('./clubs/missa')
+    })
+    app.get('/academics/student-organizations/swift', (req, res) => {
+      res.render('./clubs/swift')
+    })
+    app.get('/academics/student-organizations/fast', (req, res) => {
+      res.render('./clubs/fast')
+    })
+    app.get('/academics/student-organizations/css', (req, res) => {
+      res.render('./clubs/css')
+    })
+    app.get('/academics/scholarships', (req, res) => {
+      res.render('scholarships')
+    })
+    app.get('/projects', (req, res) => {
+      res.render('projects')
+    })
+    app.get('/research', (req, res) => {
+      res.render('research')
+    })
+    app.get('/events', (req, res) => {
+      res.render('events')
+    })
+    app.get('/contact', (req, res) => {
+      res.render('contact')
     })
   },
   contentBase: './public',
