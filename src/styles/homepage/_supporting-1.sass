@@ -1,11 +1,13 @@
 .supporting-1
-  height: 50vh
   background-color: $light-gray
-  padding: 5rem 0
+  padding: 6.5rem 0
+  @include breakpoint(small down)
+    padding: 4rem 0
   .flex-container
     justify-content: space-around
   .supp-item
     align-self: flex-start
+    padding: 1.5rem 0
     img
       width: 4.25rem
     p

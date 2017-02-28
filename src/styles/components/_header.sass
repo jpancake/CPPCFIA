@@ -2,12 +2,14 @@ nav
   font-family: 'Open Sans'
   box-shadow: 0px 2px 6px $black
   position: relative
-  z-index: 99
+  z-index: 1
 .top-bar
   padding: 0.75rem 1.5rem
   li
     h5
       margin: 0
+  a
+    color: $dark-gray
 
 
 .nav-submenu
@@ -21,4 +23,41 @@ nav
     color: $white
   li
     padding: 10px 15px
+
+// mobile
+nav[role="mobile"]
+  display: none
+  box-shadow: none
+  position: absolute
+  top: 0
+  padding: 0.25rem 0
+  width: 100%
+  background-color: rgba(204, 204, 204, 0.95)
+  text-align: center
+  z-index: 2
+  .sub-menu-mobile
+    display: none
+    background-color: $medium-gray
+  li
+    padding: 0.75rem 0
+    color: white
+  a
+    color: $dark-gray
+.top-bar-right
+  @include breakpoint(large down)
+    display: none
+
+button.hamburger
+  box-shadow: none
+  position: absolute
+  z-index: 3
+  top: 0.75rem
+  right: 0.5rem
+
+  display: none
+  @include breakpoint(large down)
+    display: block
+
+
+
 

@@ -1,24 +1,35 @@
 .mission
   color: $white
   background-color: $dark-gray
-  padding: 2rem 0
+  padding: 3rem 0
+  @include breakpoint(small down)
+    padding: 2.425rem 0
   .row
-    height: 40vh
-  div
-    padding: 1.25rem
-    height: 100%
+    @include breakpoint(large up)
+      height: 15rem
+  h3
+    @include breakpoint(small down)
+      font-size: 1.5rem
   div:first-of-type
     padding-top: 0.5rem
     padding-right: 3rem
-    border-right: 1px solid $white
     text-transform: uppercase
     text-align: right
+    border-right: 1px solid $white
+    @include breakpoint(small down)
+      align-self: center
+      border: none
+      padding-right: 0.625rem
+      margin-bottom: 2.20rem
     span
       display: block
   div:nth-child(2)
     display: flex
-    align-items: flex-end
+    align-self: flex-end
     padding-left: 3rem
-    padding-bottom: 0.5rem
+    @include breakpoint(small down)
+      border-top: 1px solid $white
+      padding-top: 2.20rem
+      padding-left: 0.625rem
     p
       margin: 0

@@ -37,7 +37,8 @@ module.exports = {
             options: {
               includePaths: [
                 path.resolve(__dirname, 'node_modules/foundation-sites/scss'),
-                path.resolve(__dirname, 'node_modules/slick-carousel/slick')
+                path.resolve(__dirname, 'node_modules/slick-carousel/slick'),
+                path.resolve(__dirname, 'node_modules/hamburgers/_sass/hamburgers')
               ]
             }
           }]

@@ -11,3 +11,8 @@
       width: 40%
       height: 225px
       background-color: rgba(255, 255, 255, 0.6)
+      @include breakpoint(small down)
+        width: 80%
+    div:nth-child(2)
+      @include breakpoint(small down)
+        display: none

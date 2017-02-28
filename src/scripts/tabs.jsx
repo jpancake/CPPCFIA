@@ -38,7 +38,7 @@ $(document).ready(function(){
     });
   });
 
-  $('ul.evtabs').each(function(){
+  $('ul.events-tabs').each(function(){
 
     // For each set of tabs, we want to keep track of
     // which tab is active and its associated content
