@@ -4,10 +4,12 @@ nav
   position: relative
   z-index: 1
 .top-bar
-  padding: 0.75rem 1.5rem
+  padding: 0.5rem 0
   li
     h5
       margin: 0
+      @include breakpoint(small only)
+        width: 250px
   a
     color: $dark-gray
 
@@ -53,8 +55,11 @@ button.hamburger
   box-shadow: none
   position: absolute
   z-index: 3
-  top: 1.25rem
+  top: 0.5rem
   right: 0.5rem
+  @include breakpoint(small only)
+    top: 1.25rem
+    right: 0.5rem
 
   display: none
   @include breakpoint(large down)

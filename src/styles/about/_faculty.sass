@@ -1,16 +1,41 @@
 .faculty
   background-color: $light-gray
   padding: 2.5rem 0
-  .picture
-    height: 313px
+  .faculty-item
+    @include breakpoint(medium down)
+      flex-direction: column
+  .faculty-picture
     img
+      height: 100%
       border: 3px solid $medium-gray
-  .title
+  .faculty-title
     background-color: $medium-gray
     color: $white
     padding: 0.25rem 0.5rem
     width: 258px
+    text-transform: uppercase
+    @include breakpoint(large up)
+      display: none
+  .faculty-content
+    width: 60%
+    background-color: $medium-gray
+    color: white
+    height: 313px
+    padding: 1rem
+    h5
+      text-transform: uppercase
+    p
+      margin-top: 1rem
+    @include breakpoint(medium down)
+     display: none
+  .faculty-item:nth-child(even)
+      .faculty-content
+        background-color: $dark-gray
+  hr
+    margin: 0 1rem
+    border: 1px solid $white
+    width: 100%
+    margin: 0 auto
   .row
     > div
       margin-bottom: 1rem
-      margin-right: 2rem

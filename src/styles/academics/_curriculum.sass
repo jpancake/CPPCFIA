@@ -1,9 +1,14 @@
 .curriciulum
   padding: 2rem 0
-  > ul
+  .tabs-list
+    ul
+    justify-content: space-around
     li
       padding: 1rem 1rem
       text-transform: uppercase
+    @include breakpoint(small down)
+      font-size: 0.85rem
+
   .curriculum-major
     img
       padding-bottom: 1rem
