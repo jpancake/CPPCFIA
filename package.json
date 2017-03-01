@@ -12,11 +12,14 @@
     "start": "babel-node server.js"
   },
   "dependencies": {
+    "csspin": "^1.1.4",
     "foundation-sites": "^6.3.0",
     "hamburgers": "^0.7.0",
     "jquery": "^3.1.1",
     "jquery-easing": "^0.0.1",
-    "slick-carousel": "^1.6.0"
+    "slick-carousel": "^1.6.0",
+    "spinkit": "^1.2.5",
+    "spinthatshit": "^1.0.3"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",

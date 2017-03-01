@@ -38,11 +38,13 @@ nav[role="mobile"]
   .sub-menu-mobile
     display: none
     background-color: $medium-gray
-  li
-    padding: 0.75rem 0
-    color: white
-  a
-    color: $dark-gray
+  ul
+    margin-bottom: 0
+    li
+      padding: 0.75rem 0
+      color: white
+    a
+      color: $dark-gray
 .top-bar-right
   @include breakpoint(large down)
     display: none
@@ -51,7 +53,7 @@ button.hamburger
   box-shadow: none
   position: absolute
   z-index: 3
-  top: 0.75rem
+  top: 1.25rem
   right: 0.5rem
 
   display: none

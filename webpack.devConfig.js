@@ -7,6 +7,7 @@ module.exports = {
       'webpack-dev-server/client?http://localhost:3050/',
       'webpack/hot/dev-server',
       'script-loader!jquery/dist/jquery.min.js',
+      'script-loader!./src/scripts/spinner.jsx',
       'slick-carousel/slick/slick.scss',
       'slick-carousel/slick/slick-theme.scss',
       './src/index.jsx'
@@ -38,7 +39,8 @@ module.exports = {
               includePaths: [
                 path.resolve(__dirname, 'node_modules/foundation-sites/scss'),
                 path.resolve(__dirname, 'node_modules/slick-carousel/slick'),
-                path.resolve(__dirname, 'node_modules/hamburgers/_sass/hamburgers')
+                path.resolve(__dirname, 'node_modules/hamburgers/_sass/hamburgers'),
+                path.resolve(__dirname, 'node_modules/spinkit/scss')
               ]
             }
           }]

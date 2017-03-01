@@ -1376,6 +1376,10 @@ csso@~2.3.1:
     clap "^1.0.9"
     source-map "^0.5.3"
 
+csspin@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/csspin/-/csspin-1.1.4.tgz#e439a17b4098b914dfb7790d0d07c032856ce382"
+
 currently-unhandled@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/currently-unhandled/-/currently-unhandled-0.4.1.tgz#988df33feab191ef799a61369dd76c17adf957ea"
@@ -3628,6 +3632,14 @@ spdy@^3.4.1:
     http-deceiver "^1.2.4"
     select-hose "^2.0.0"
     spdy-transport "^2.0.15"
+
+spinkit@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/spinkit/-/spinkit-1.2.5.tgz#90f9f466a20e8e39ef24da959c1e611c2a30dd54"
+
+spinthatshit@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/spinthatshit/-/spinthatshit-1.0.3.tgz#ba264dc106aa71a29a622b45bdfe0d18206e9380"
 
 sprintf-js@~1.0.2:
   version "1.0.3"
